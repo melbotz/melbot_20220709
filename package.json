@@ -1,0 +1,25 @@
+{
+  "name": "melbot_20220709",
+  "version": "0.0.1",
+  "description": "melbot_20220709",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "melbot_20220709": "./bin/serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melbotz/melbot_20220709.git"
+  },
+  "author": "Melvin Carvalho",
+  "license": "MIT",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "serve": "^13.0.4",
+    "url": "^0.11.0"
+  }
+}

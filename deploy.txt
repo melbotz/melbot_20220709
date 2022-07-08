@@ -1,0 +1,5 @@
+bump package
+git mark (lazy)
+npm publish
+git push github
+git-mark-list $(git config gitmark.secret) | websockat <relay>

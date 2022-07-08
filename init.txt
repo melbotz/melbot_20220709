@@ -1,0 +1,22 @@
+init
+
+copy previous bot to new dir
+remove .git
+git init
+create repo on localhost
+create repo on github
+add remotes
+git mark init
+add config
+previous exodus to new address, grab tx
+change gitmark tx
+change name and date
+change amount
+link to previous bot
+change bookmark
+add nostr address
+add relay
+check in
+push
+git mark --genesis tx
+change amount and send tx

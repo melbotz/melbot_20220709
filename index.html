@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20220709</title>
+    <link rel="stylesheet" href="./css/spux.css" />
+    <script type="application/json" id="data">
+      {
+        "@id": "",
+        "birth": "7/8/2022, 21:33:49",
+        "energy": 99510,
+        "address": "bNJSXRxBH7KZX52Ku7MbCr1CAc1TdVSLWs",
+        "gitmark": {
+          "@id": "gitmark:d60703354709c88724f058cc2184a28831f6c8635324837650f5ccfff3ce5595:0",
+          "genesis": "gitmark:d60703354709c88724f058cc2184a28831f6c8635324837650f5ccfff3ce5595:0",
+          "nick": "melbot_20220709",
+          "package": "./package.json",
+          "repository": "./"
+        },
+        "bookmark": [
+          {
+            "@id": "https://www.reddit.com/r/EarthPorn/comments/vu9vrc/a_lone_tree_in_the_sahara_mauritania_5194x3888_oc/",
+            "image": "https://i.redd.it/9emq3r9dsda91.jpg",
+            "@type": "ImageObject"
+          },
+          {
+            "@id": "https://www.reddit.com/r/EarthPorn/comments/vui6s7/ne_washington_state_oc_3024_4032/",
+            "image": "https://i.redd.it/be17lqo67ea91.jpg",
+            "@type": "ImageObject"
+          }
+        ],
+        "previous": "../melbot_20220708/",
+        "next": "../melbot_20220710/",
+        "nostrkey": "37b0a06b7be461cdff7084ec01e83057e72b343b1f0c7210e6c7d37e9c89caa2"
+      }
+    </script>
+
+    <script type="module">
+      // IMPORTS
+      import { render, html } from 'https://cdn.skypack.dev/spux'
+      import 'https://cdn.skypack.dev/dior'
+
+      // COMPONENTS
+      function Navbar (props) {
+        let title = props.title || 'Spux'
+        return html`
+          <div id="navbar" style="margin-top: -10px; margin-bottom: -10px;">
+            <div class="bg-success pv2 row">
+              <div class="col">
+                <a href="#buttons" class="white ph2 bold">${title}</a>
+              </div>
+            </div>
+          </div>
+          <hr />
+        `
+      }
+
+      function Bookmark (props) {
+        let uri = props.uri || '#'
+        let title = props.title || 'bookmark'
+        let image = props.image || '#'
+        return html`
+          <td>
+            <img height="200" src="${image}" /> ${'\n'}
+            <br />
+            <a style="color: blue" href="${uri}" target="_blank">reddit 🔗</a>
+          </td>
+        `
+      }
+
+      // INIT
+      var bookmarks = di.data.bookmark
+
+      // RENDER
+      render(
+        html`
+          <${Navbar} title="${di.data.gitmark['nick']}" />
+
+          <img
+            src="https://robohash.org/gitmark:d60703354709c88724f058cc2184a28831f6c8635324837650f5ccfff3ce5595:0"
+          />
+
+          <pre>
+
+                  Name: ${di.data.gitmark['nick'] + '\n'}
+                  Birth: ${di.data.birth} ${'\n'}
+                  Energy: ${di.data.energy} Marks ${'\n'}
+                  Address: <a style="color: blue" href="https://chainz.cryptoid.info/marks/address.dws?${di
+            .data.address}.htm" target="_blank">${di.data.address}</a> ${'\n'}
+            Previous: <a style="color: blue" href="${di.data.previous}">${di
+            .data.previous}</a> ${'\n'}
+            Next: <a style="color: blue" href="${di.data.next}">${di.data
+            .next}</a> ${'\n'}
+            Nostr: ${di.data.nostrkey}
+
+
+          </pre>
+          <h4>Activity</h4>
+          <pre>
+      <a style="color: blue"
+                  href="https://gitmark.info/${di.data.gitmark['@id'].split(
+            ':'
+          )[1]}"
+                  target="_blank"
+                  >Genesis</a
+                >
+                  </pre>
+
+          <h4>Bookmarks</h4>
+
+          <table>
+            <tr>
+              ${bookmarks.map(i => {
+                return html`
+                  <${Bookmark} uri="${i['@id']}" image="${i.image}" />
+                `
+              })}
+            </tr>
+          </table>
+
+          <footer>
+            |
+            <a
+              style="color: blue"
+              href="https://gitmark.info/${di.data.gitmark['@id'].split(
+                ':'
+              )[1]}"
+              target="_blank"
+              >${di.data.gitmark['@id']}</a
+            >
+            |
+          </footer>
+        `,
+        document.body
+      )
+
+      console.log(di.data)
+    </script>
+  </head>
+  <body></body>
+</html>

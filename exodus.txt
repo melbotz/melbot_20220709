@@ -1,0 +1,9 @@
+exodus
+
+git mark --exodus
+get tx
+
+create new genesis
+git mark from tx to new pubkey with privkey from prev genesis
+
+push to all remotes

@@ -1,0 +1,60 @@
+20220709
+new bot
+
+
+20220708
+new bot
+link to next bot
+navbar
+bookmark component
+multiple bookmarks
+bookmark map
+nostr
+  generate nostr id
+    from public key
+npm publish
+gitignore
+better README
+credit robohash
+github in npm
+align with schema.org
+run with npx
+add deploy.txt
+
+20220707
+new bot
+
+20220706
+new bot
+previous link
+new bookmark
+todo.txt
+exodus.txt
+init.txt
+bookmark as an object
+  @id 
+  image
+
+
+20220705
+exodus
+bookmarks
+write to gitlab
+
+20220704
+new bot
+
+20220703
+exodus genesis
+git mark init
+git mark
+index.html
+data island
+render module
+render
+use lazy git to commit
+Add gitmark.json
+css get from spux
+create changelog.txt
+link to gitmark tx
+avatar
