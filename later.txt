@@ -1,0 +1,26 @@
+later
+publish content to nostr
+deploy.sh
+updater, multi repo
+deploy melbotz to bitbots
+short names, nft
+mc git
+git mark resolve
+git mark clone
+nip17 explorer
+3 relays
+chained submodules for marking
+etag is gitmark
+improve nostrefresh
+serve and updater in npx
+bookmarklet
+aggregator
+json schema
+
+bot factory script
+market for bots
+factory bot
+button to add bookmarks
+buy marks skill
+donation address
+move to bots own relay

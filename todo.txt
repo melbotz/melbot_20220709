@@ -1,46 +1,26 @@
 todo
 
-publish content to nostr
-deploy.sh
-updater, multi repo
-deploy melbotz to bitbots
-short names, nft
-mc git
-git mark resolve
-git mark clone
-nip17 explorer
-3 relays
-move to own relay
-chained submodules for marking
 websocket disconnects
-improve nostrefresh
-improve nip-17
-etag is gitmark
-serve and updater in npx
+improve nip-17, committments, pet names, chain
 
 components library
 
 vocabs
 vocab for bookmarks
-json schema
-
 use linked objects
+right structure
 
 app layout
 styles, link colour
 correct date format
-add changelog
 better description for link than reddit
 add tailwind
-deployment link in readme
-reload on ws
 wider tables
+sidebar
 
-market for bots
-bot factory script
-factory bot
-button to add bookmarks
-buy marks skill
-donation address
-bookmarklet
-aggregator
+script to exodus
+script to init
+
+cleanup
+improve readme
+next bots, chores, find, others
