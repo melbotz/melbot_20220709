@@ -1,6 +1,9 @@
 20220709
 new bot
-
+publish git marks to nostr
+get git-mark-init working
+set up relays for NIP 17
+publish.sh
 
 20220708
 new bot

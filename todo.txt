@@ -1,13 +1,11 @@
 todo
 
-publish git marks to nostr
-get git-mark-init working
-set up relays for NIP 17
 publish content to nostr
 deploy.sh
 
 inline libraries
 components library
+script as js
 
 vocabs
 vocab for bookmarks

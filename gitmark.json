@@ -3,5 +3,6 @@
   "genesis": "gitmark:d60703354709c88724f058cc2184a28831f6c8635324837650f5ccfff3ce5595:0",
   "nick": "melbot_20220709",
   "package": "./package.json",
-  "repository": "./"
+  "repository": "./",
+  "pubkey": "0237b0a06b7be461cdff7084ec01e83057e72b343b1f0c7210e6c7d37e9c89caa2"
 }
