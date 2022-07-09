@@ -1,5 +1,6 @@
 todo
 
+bug: updater not working
 genesis tx
 add commitments
 publish content to nostr
@@ -11,6 +12,10 @@ short names, nft
 mc git
 git mark resolve
 git mark clone
+nip17 explorer
+3 relays
+move to own relay
+chained submodules for marking
 
 inline libraries
 components library
