@@ -1,8 +1,8 @@
 
 // IMPORTS
-import { render, html } from 'https://cdn.skypack.dev/spux'
-import 'https://cdn.skypack.dev/dior'
-import 'https://cdn.skypack.dev/nostrefresh'
+import { render, html } from '../js/preacthtm.js'
+import '../js/dior.js'
+import '../js/nostrefresh.js'
 
 // COMPONENTS
 function Navbar(props) {

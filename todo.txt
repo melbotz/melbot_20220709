@@ -1,11 +1,8 @@
 todo
 
-genesis tx
-add commitments
 publish content to nostr
 deploy.sh
 updater, multi repo
-deploy melbotz to localhost
 deploy melbotz to bitbots
 short names, nft
 mc git
@@ -21,7 +18,6 @@ improve nip-17
 etag is gitmark
 serve and updater in npx
 
-inline libraries
 components library
 
 vocabs

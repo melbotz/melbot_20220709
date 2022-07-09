@@ -10,6 +10,10 @@ add deploy
 add commands to package.json
 bug: updater not working
 script as js
+genesis tx
+add commitments
+deploy melbotz to localhost
+inline libraries
 
 
 20220708
