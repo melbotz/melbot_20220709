@@ -3,22 +3,9 @@
 import { render, html } from '../js/preacthtm.js'
 import '../js/dior.js'
 import '../js/nostrefresh.js'
+import Navbar from '../components/Navbar.js'
 
 // COMPONENTS
-function Navbar(props) {
-  let title = props.title || 'Spux'
-  return html`
-          <div id="navbar" style="margin-top: -10px; margin-bottom: -10px;">
-            <div class="bg-success pv2 row">
-              <div class="col">
-                <a href="#buttons" class="white ph2 bold">${title}</a>
-              </div>
-            </div>
-          </div>
-          <hr />
-        `
-}
-
 function Bookmark(props) {
   let uri = props.uri || '#'
   let title = props.title || 'bookmark'
