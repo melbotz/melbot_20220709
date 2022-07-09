@@ -3,8 +3,6 @@ todo
 websocket disconnects
 improve nip-17, committments, pet names, chain
 
-components library
-
 vocabs
 vocab for bookmarks
 use linked objects

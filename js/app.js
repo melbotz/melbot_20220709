@@ -3,21 +3,10 @@
 import { render, html } from '../js/preacthtm.js'
 import '../js/dior.js'
 import '../js/nostrefresh.js'
-import Navbar from '../components/Navbar.js'
 
 // COMPONENTS
-function Bookmark(props) {
-  let uri = props.uri || '#'
-  let title = props.title || 'bookmark'
-  let image = props.image || '#'
-  return html`
-          <td>
-            <img height="200" src="${image}" /> ${'\n'}
-            <br />
-            <a style="color: blue" href="${uri}" target="_blank">reddit 🔗</a>
-          </td>
-        `
-}
+import Navbar from '../components/Navbar.js'
+import Bookmark from '../components/Bookmark.js'
 
 // INIT
 var bookmarks = di.data.bookmark
