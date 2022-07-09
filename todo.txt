@@ -18,7 +18,6 @@ chained submodules for marking
 
 inline libraries
 components library
-script as js
 
 vocabs
 vocab for bookmarks

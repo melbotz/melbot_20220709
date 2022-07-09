@@ -9,6 +9,7 @@ add updater
 add deploy
 add commands to package.json
 bug: updater not working
+script as js
 
 
 20220708

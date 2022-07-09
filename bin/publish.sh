@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+git push github
+npm publish
+
 #RELAY="ws://nostr.rocks:1617"
 RELAY=$(git config gitmark.relay)
 
