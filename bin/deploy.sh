@@ -25,10 +25,9 @@ fi
 
 # pull latest
 git pull origin gh-pages
-exit
 
-git add webcredits
-git commit -m "$MESSAGE"
+# git add webcredits
+# git commit -m "$MESSAGE"
 
 # check if marked
 git log -1 --pretty=%s | grep '^gitmark '
@@ -38,6 +37,11 @@ then
   rm "${LOCKFILE}"
   exit
 fi
+
+echo removing ${LOCKFILE}
+rm "${LOCKFILE}"
+
+exit
 
 # push new changes
 git push origin gh-pages
