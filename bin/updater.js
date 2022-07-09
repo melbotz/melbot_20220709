@@ -26,6 +26,7 @@ setInterval(loop, TIME)
 if (wsdeploy) {
   try {
     var relay = 'ws://nostr.rocks:1617'
+    console.log('relay', relay)
     const ws = new WebSocket(relay)
 
     ws.on('open', function open() {
@@ -33,9 +34,9 @@ if (wsdeploy) {
 
       // var lastCommit = getLastCommit()
 
-      var now = Math.round((new Date()).getTime() / 1000) - 10000
+      var now = Math.round((new Date()).getTime() / 1000)
 
-      var msg = `["REQ", "tail", {"since": ${now} }`
+      var msg = `["REQ", "tail", {"since": ${now}}]`
       // var msg = '["REQ", "mirror", {"since": 1643698576  }]'
 
       console.log('sub', msg)

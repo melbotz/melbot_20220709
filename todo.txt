@@ -1,6 +1,5 @@
 todo
 
-bug: updater not working
 genesis tx
 add commitments
 publish content to nostr

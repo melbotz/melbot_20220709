@@ -8,6 +8,7 @@ add tag to genesis for repo
 add updater
 add deploy
 add commands to package.json
+bug: updater not working
 
 
 20220708
