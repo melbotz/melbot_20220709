@@ -10,6 +10,7 @@ import Bookmark from '../components/Bookmark.js'
 
 // INIT
 var bookmarks = di.data.bookmark
+var doc = di.data
 
 // RENDER
 render(
@@ -22,23 +23,23 @@ render(
 
           <pre>
 
-                  Name: ${di.data.gitmark['nick'] + '\n'}
-                  Birth: ${di.data.birth} ${'\n'}
-                  Energy: ${di.data.energy} Marks ${'\n'}
+                  Name: ${doc.gitmark['nick'] + '\n'}
+                  Birth: ${doc.birth} ${'\n'}
+                  Energy: ${doc.energy} Marks ${'\n'}
                   Address: <a style="color: blue" href="https://chainz.cryptoid.info/marks/address.dws?${di
-      .data.address}.htm" target="_blank">${di.data.address}</a> ${'\n'}
-            Previous: <a style="color: blue" href="${di.data.previous}">${di
+      .data.address}.htm" target="_blank">${doc.address}</a> ${'\n'}
+            Previous: <a style="color: blue" href="${doc.previous}">${di
       .data.previous}</a> ${'\n'}
-            Next: <a style="color: blue" href="${di.data.next}">${di.data
+            Next: <a style="color: blue" href="${doc.next}">${doc
       .next}</a> ${'\n'}
-            Nostr: ${di.data.nostrkey}
+            Nostr: ${doc.nostrkey}
 
 
           </pre>
           <h4>Activity</h4>
           <pre>
       <a style="color: blue"
-                  href="https://gitmark.info/${di.data.gitmark['@id'].split(
+                  href="https://gitmark.info/${doc.gitmark['@id'].split(
         ':'
       )[1]}"
                   target="_blank"
@@ -62,11 +63,11 @@ render(
             |
             <a
               style="color: blue"
-              href="https://gitmark.info/${di.data.gitmark['@id'].split(
+              href="https://gitmark.info/${doc.gitmark['@id'].split(
         ':'
       )[1]}"
               target="_blank"
-              >${di.data.gitmark['@id']}</a
+              >${doc.gitmark['@id']}</a
             >
             |
           </footer>
@@ -74,4 +75,4 @@ render(
   document.body
 )
 
-console.log(di.data)
+console.log(doc)
