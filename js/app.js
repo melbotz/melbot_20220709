@@ -9,8 +9,8 @@ import Navbar from '../components/Navbar.js'
 import Bookmark from '../components/Bookmark.js'
 
 // INIT
-var bookmarks = di.data.bookmark
 var doc = di.data
+var bookmarks = doc.bookmark
 
 // RENDER
 render(
