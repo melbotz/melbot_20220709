@@ -15,6 +15,11 @@ nip17 explorer
 3 relays
 move to own relay
 chained submodules for marking
+websocket disconnects
+improve nostrefresh
+improve nip-17
+etag is gitmark
+serve and updater in npx
 
 inline libraries
 components library
