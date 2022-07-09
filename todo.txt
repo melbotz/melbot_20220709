@@ -1,8 +1,16 @@
 todo
 
+genesis tx
+add commitments
 publish content to nostr
 deploy.sh
-updater
+updater, multi repo
+deploy melbotz to localhost
+deploy melbotz to bitbots
+short names, nft
+mc git
+git mark resolve
+git mark clone
 
 inline libraries
 components library

@@ -5,6 +5,9 @@ get git-mark-init working
 set up relays for NIP 17
 publish.sh
 add tag to genesis for repo
+add updater
+add deploy
+add commands to package.json
 
 
 20220708

@@ -1,11 +1,14 @@
 {
   "name": "melbot_20220709",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "melbot_20220709",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run server && npm run updater",
+    "server": "pm2 start --name melbot_20220709_server bin/serve.sh",
+    "updater": "pm2 start --name melbot_20220709_updater bin/deploy.sh --restart-delay=300000"
   },
   "bin": {
     "melbot_20220709": "./bin/serve.js"
@@ -17,9 +20,11 @@
   "author": "Melvin Carvalho",
   "license": "MIT",
   "dependencies": {
+    "child_process": "^1.0.2",
     "http": "^0.0.1-security",
     "path": "^0.12.7",
     "serve": "^13.0.4",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "ws": "^8.8.0"
   }
 }
