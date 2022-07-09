@@ -2,6 +2,7 @@ todo
 
 publish content to nostr
 deploy.sh
+updater
 
 inline libraries
 components library
